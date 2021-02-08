@@ -4,7 +4,9 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <div>Hello World!</div>
+      <React.Fragment>
+        <button>Like<span className="plural">s</span> <span className="increment">0</span></button>
+      </React.Fragment>
     )
   }
 }
