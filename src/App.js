@@ -13,8 +13,8 @@ class App extends Component {
     this.handleIncrement = this.handleIncrement.bind(this);
   }
   handleIncrement() {
-    // Non shorthand: this.setState((state) => ({likes: state.likes + 1}));
-    this.setState({number: this.state.number + 1, likes: (this.state.number >= 1) && (this.state.number !== 0) ? "Likes" : "Like"});
+    // Non shorthand: this.setState((state) => ({likes: state.likes + 1}))
+    this.setState((state) => ({number: state.number + 1, likes: (state.number >= 1) && (this.state.number !== 0) ? "Likes" : "Like"}));
   }
 
   render() {
