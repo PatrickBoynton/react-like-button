@@ -14,13 +14,13 @@ class App extends Component {
   }
   handleIncrement() {
     // Non shorthand: this.setState((state) => ({likes: state.likes + 1}))
-    this.setState((state) => ({number: state.number + 1, likes: (state.number >= 1) && (this.state.number !== 0) ? "Likes" : "Like"}));
+    this.setState((state) => ({number: state.number + 1}))
   }
 
   render() {
     return (
       <React.Fragment>
-        <button onClick={() => this.handleIncrement()}>{this.state.likes} {this.state.number}</button>
+        <button onClick={() => this.handleIncrement()}>{this.state.number} {this.state.number === 1 ? "like" : "likes"}</button>
       </React.Fragment>
     )
   }
