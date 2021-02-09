@@ -20,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        {/* Testing */}
         <button onClick={() => this.handleIncrement()}>{this.state.number} {this.state.number === 1 ? "like" : "likes"}</button>
       </React.Fragment>
     )
